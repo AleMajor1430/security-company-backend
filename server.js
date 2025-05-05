@@ -13,7 +13,7 @@ const fireaArms = require("./routes/FireArmsRoutes");
 
 dotenv.config();
 const app = express();
-const PORT = process.env.EXPRESS_PORT || 8000;
+const PORT = process.env.EXPRESS_PORT || 8080;
 
 
 const corsOptions = {
