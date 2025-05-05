@@ -35,7 +35,9 @@ app.use("/api", auth);
 app.use("/api", users);
 app.use("/api", companyInformation);
 app.use("/api", fireaArms)
-app.use("/", "Hello World")
+app.use("/", (res, req) => {
+  res.send("Backend")
+})
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
