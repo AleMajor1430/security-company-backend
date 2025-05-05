@@ -17,7 +17,7 @@ const PORT = process.env.EXPRESS_PORT || 8080;
 
 
 const corsOptions = {
-  origin: "http://localhost:3000", 
+  origin: "https://security-company-frontend.vercel.app", 
   credentials: true, 
   methods: ["GET", "POST", "PUT", "DELETE"], 
   allowedHeaders: ["Content-Type", "Authorization"],
